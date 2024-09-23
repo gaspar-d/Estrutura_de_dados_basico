@@ -58,3 +58,47 @@ mesclar_dicionarios({"a": 1, "b": 2}, {"b": 3, "c": 4})
 # dict1 = {"a": 1, "b": 2}
 # dict2 = {"b": 3, "c": 4}
 # Saída esperada: {"a": 1, "b": 3, "c": 4}
+
+# ===============================================================================
+# 4. Acessar valores de um dicionário aninhado (nested)
+# Dado um dicionário aninhado, retorne o valor associado a uma chave no dicionário interno
+# lembre-se que dicionários são key: value
+def acessar_valor_dicionario(dicionario, chave_externa, chave_interna):
+    pass  # Implemente seu código aqui
+
+# Exemplo de uso:
+# dicionario = {
+#    "pessoa1": {"nome": "Ana", "idade": 25},
+#    "pessoa2": {"nome": "Carlos", "idade": 30}
+# }
+# acessar_valor_dicionario(dicionario, "pessoa1", "nome") deve retornar "Ana"
+
+# ===============================================================================
+# 5. Modifique um valor
+# Modifique um valor em um dicionário aninhado nas chaves especificadas
+def modificar_dicionario(dicionario, chave_externa, chave_interna, novo_valor):
+    pass  # Implemente seu código aqui
+
+# Exemplo de uso:
+# dicionario = {
+#    "produto1": {"nome": "Notebook", "preco": 2000},
+#    "produto2": {"nome": "Mouse", "preco": 50}
+# }
+# modificar_dicionario(dicionario, "produto2", "preco", 60)
+# dicionario deve se tornar: {
+#    "produto1": {"nome": "Notebook", "preco": 2000},
+#    "produto2": {"nome": "Mouse", "preco": 60}
+# }
+
+# ===============================================================================
+# 6. Some todos os valores numéricos (int)
+# Dado um dicionário aninhado, some todos os valores numéricos
+def soma_valores_dicionario(dicionario):
+    pass  # Implemente seu código aqui
+
+# Exemplo de uso:
+# dicionario = {
+#    "aluno1": {"nota1": 8, "nota2": 9},
+#    "aluno2": {"nota1": 7, "nota2": 10}
+# }
+# soma_valores_dicionario(dicionario) deve retornar 34 (8 + 9 + 7 + 10)
