@@ -49,3 +49,52 @@ remover_duplicatas([1, 2, 2, 3, 4, 4, 5])
 # Exemplo de uso:
 # Entrada: [1, 2, 2, 3, 4, 4, 5]
 # Saída esperada: [1, 2, 3, 4, 5]
+
+
+# 4. Acesse elementos em uma lista 2D (matriz)
+# Dada uma lista 2D (matriz), retorne o valor na posição linha e coluna
+def acessar_elemento_matriz(matriz, linha, coluna):
+    pass  # Implemente seu código aqui
+
+
+# Exemplo de uso:
+# matriz = [
+#    [1, 2, 3],
+#    [4, 5, 6],
+#    [7, 8, 9]
+# ]
+# acessar_elemento_matriz(matriz, 1, 2) deve retornar 6
+
+
+# 5. Some TODOS elementos da lista 2D
+# Dada uma lista 2D (matriz), retorne a soma de todos os elementos
+def soma_matriz(matriz):
+    pass  # Implemente seu código aqui
+
+
+# Exemplo de uso:
+# matriz = [
+#    [1, 2],
+#    [3, 4]
+# ]
+# soma_matriz(matriz) deve retornar 10 (1 + 2 + 3 + 4)
+
+
+# 6. Modifique elementos na lista 2D
+# Modifique o elemento em uma lista 2D (matriz) na posição dada pela linha e coluna
+def modificar_matriz(matriz, linha, coluna, novo_valor):
+    pass  # Implemente seu código aqui
+
+
+# Exemplo de uso:
+# matriz = [
+#    [1, 2, 3],
+#    [4, 5, 6],
+#    [7, 8, 9]
+# ]
+# modificar_matriz(matriz, 1, 1, 100) modifica o 5 para 100
+# matriz deve se tornar: [
+#    [1, 2, 3],
+#    [4, 100, 6],
+#    [7, 8, 9]
+# ]
