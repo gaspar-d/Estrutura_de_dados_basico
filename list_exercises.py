@@ -9,7 +9,8 @@ def encontrar_pares(numeros: list[int]):
     print("=" * 20)
 
 
-encontrar_pares([1, 2, 3, 4, 5, 6])
+# encontrar_pares([1, 2, 3, 4, 5, 6])
+
 # Exemplo de uso:
 # Entrada: [1, 2, 3, 4, 5, 6]
 # Saída esperada: [2, 4, 6]
@@ -27,7 +28,8 @@ def soma_elementos(numeros: list[int]):
     print("=" * 20)
 
 
-soma_elementos([10, 20, 30])
+# soma_elementos([10, 20, 30])
+
 # Exemplo de uso:
 # Entrada: [10, 20, 30]
 # Saída esperada: 60
@@ -44,7 +46,7 @@ def remover_duplicatas(numeros: list[int]):
     print("=" * 20)
 
 
-remover_duplicatas([1, 2, 2, 3, 4, 4, 5])
+# remover_duplicatas([1, 2, 2, 3, 4, 4, 5])
 
 # Exemplo de uso:
 # Entrada: [1, 2, 2, 3, 4, 4, 5]
@@ -55,8 +57,10 @@ remover_duplicatas([1, 2, 2, 3, 4, 4, 5])
 # 4. Acesse elementos em uma lista 2D (matriz)
 # Dada uma lista 2D (matriz), retorne o valor na posição linha e coluna
 def acessar_elemento_matriz(matriz, linha, coluna):
-    pass  # Implemente seu código aqui
+    print(matriz[linha][coluna])
 
+
+# acessar_elemento_matriz([[1, 2, 3], [4, 5, 6], [7, 8, 9]], 1, 2)
 
 # Exemplo de uso:
 # matriz = [
@@ -71,9 +75,19 @@ def acessar_elemento_matriz(matriz, linha, coluna):
 # 5. Some TODOS elementos da lista 2D
 # Dada uma lista 2D (matriz), retorne a soma de todos os elementos
 def soma_matriz(matriz):
-    pass  # Implemente seu código aqui
+    # Esse primeiro modo é só para visualizar o acesso,
+    # o total2 é modo correto pois não importa o tamanho das listas ele vai somar usando o mesmo código
+    total = matriz[0][0] + matriz[0][1] + matriz[1][0] + matriz[1][1]
+
+    total2 = 0
+    for linha in matriz:
+        for coluna in linha:
+            total2 += coluna
+
+    print(total2)
 
 
+# soma_matriz([[1, 2], [3, 4, 5]])
 # Exemplo de uso:
 # matriz = [
 #    [1, 2],
@@ -86,15 +100,15 @@ def soma_matriz(matriz):
 # 6. Modifique elementos na lista 2D
 # Modifique o elemento em uma lista 2D (matriz) na posição dada pela linha e coluna
 def modificar_matriz(matriz, linha, coluna, novo_valor):
-    pass  # Implemente seu código aqui
+    matriz[linha][coluna] = novo_valor
 
+    print(matriz)
+
+
+modificar_matriz([[1, 2, 3], [4, 5, 6], [7, 8, 9]], 1, 1, 100)
 
 # Exemplo de uso:
-# matriz = [
-#    [1, 2, 3],
-#    [4, 5, 6],
-#    [7, 8, 9]
-# ]
+# matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 # modificar_matriz(matriz, 1, 1, 100) modifica o 5 para 100
 # matriz deve se tornar: [
 #    [1, 2, 3],
