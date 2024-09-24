@@ -9,7 +9,7 @@ def encontrar_pares(numeros: list[int]):
     print("=" * 20)
 
 
-# encontrar_pares([1, 2, 3, 4, 5, 6])
+encontrar_pares([1, 2, 3, 4, 5, 6])
 
 # Exemplo de uso:
 # Entrada: [1, 2, 3, 4, 5, 6]
@@ -28,7 +28,7 @@ def soma_elementos(numeros: list[int]):
     print("=" * 20)
 
 
-# soma_elementos([10, 20, 30])
+soma_elementos([10, 20, 30])
 
 # Exemplo de uso:
 # Entrada: [10, 20, 30]
@@ -46,7 +46,7 @@ def remover_duplicatas(numeros: list[int]):
     print("=" * 20)
 
 
-# remover_duplicatas([1, 2, 2, 3, 4, 4, 5])
+remover_duplicatas([1, 2, 2, 3, 4, 4, 5])
 
 # Exemplo de uso:
 # Entrada: [1, 2, 2, 3, 4, 4, 5]
@@ -60,7 +60,7 @@ def acessar_elemento_matriz(matriz, linha, coluna):
     print(matriz[linha][coluna])
 
 
-# acessar_elemento_matriz([[1, 2, 3], [4, 5, 6], [7, 8, 9]], 1, 2)
+acessar_elemento_matriz([[1, 2, 3], [4, 5, 6], [7, 8, 9]], 1, 2)
 
 # Exemplo de uso:
 # matriz = [
@@ -87,7 +87,7 @@ def soma_matriz(matriz):
     print(total2)
 
 
-# soma_matriz([[1, 2], [3, 4, 5]])
+soma_matriz([[1, 2], [3, 4, 5]])
 # Exemplo de uso:
 # matriz = [
 #    [1, 2],
