@@ -38,6 +38,7 @@ def duplicar_valores(meu_dict: dict[str, int]):
 
 
 duplicar_valores({"a": 10, "b": 20, "c": 30})
+
 # Exemplo de uso:
 # Entrada: {"a": 10, "b": 20, "c": 30}
 # Saída esperada: {"a": 20, "b": 40, "c": 60}
@@ -53,18 +54,31 @@ def mesclar_dicionarios(dict1: dict[str, int], dict2: dict[str, int]):
     print(dict1)
     print("=" * 30)
 
+
 mesclar_dicionarios({"a": 1, "b": 2}, {"b": 3, "c": 4})
+
 # Exemplo de uso:
 # dict1 = {"a": 1, "b": 2}
 # dict2 = {"b": 3, "c": 4}
 # Saída esperada: {"a": 1, "b": 3, "c": 4}
+
 
 # ===============================================================================
 # 4. Acessar valores de um dicionário aninhado (nested)
 # Dado um dicionário aninhado, retorne o valor associado a uma chave no dicionário interno
 # lembre-se que dicionários são key: value
 def acessar_valor_dicionario(dicionario, chave_externa, chave_interna):
-    pass  # Implemente seu código aqui
+    print(dicionario[chave_externa].get(chave_interna))
+
+
+acessar_valor_dicionario(
+    {
+        "pessoa1": {"nome": "Ana", "idade": 25},
+        "pessoa2": {"nome": "Carlos", "idade": 30},
+    },
+    "pessoa1",
+    "nome",
+)
 
 # Exemplo de uso:
 # dicionario = {
@@ -73,11 +87,25 @@ def acessar_valor_dicionario(dicionario, chave_externa, chave_interna):
 # }
 # acessar_valor_dicionario(dicionario, "pessoa1", "nome") deve retornar "Ana"
 
+
 # ===============================================================================
 # 5. Modifique um valor
 # Modifique um valor em um dicionário aninhado nas chaves especificadas
 def modificar_dicionario(dicionario, chave_externa, chave_interna, novo_valor):
-    pass  # Implemente seu código aqui
+    dicionario[chave_externa].update({chave_interna: novo_valor})
+
+    print(dicionario)
+
+
+modificar_dicionario(
+    {
+        "produto1": {"nome": "Notebook", "preco": 2000},
+        "produto2": {"nome": "Mouse", "preco": 50},
+    },
+    "produto2",
+    "preco",
+    60,
+)
 
 # Exemplo de uso:
 # dicionario = {
@@ -90,11 +118,28 @@ def modificar_dicionario(dicionario, chave_externa, chave_interna, novo_valor):
 #    "produto2": {"nome": "Mouse", "preco": 60}
 # }
 
+
 # ===============================================================================
 # 6. Some todos os valores numéricos (int)
 # Dado um dicionário aninhado, some todos os valores numéricos
 def soma_valores_dicionario(dicionario):
-    pass  # Implemente seu código aqui
+    total: int = 0
+
+    for alunos in dicionario.items():
+        # print(alunos)
+        for aluno in alunos:
+            print(aluno)
+            for nota in aluno.keys():
+                print(f"nota: {nota}")
+
+            # total += nota
+
+    print(total)
+
+
+soma_valores_dicionario(
+    {"aluno1": {"nota1": 8, "nota2": 9}, "aluno2": {"nota1": 7, "nota2": 10}}
+)
 
 # Exemplo de uso:
 # dicionario = {

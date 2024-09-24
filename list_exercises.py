@@ -1,6 +1,7 @@
 # 1. Encontrar Números Pares em uma Lista
 # Escreva uma função que receba uma lista de inteiros como entrada
 # e retorne uma nova lista contendo apenas os números pares.
+
 def encontrar_pares(numeros):
     pass  # Implemente seu código aqui
 
