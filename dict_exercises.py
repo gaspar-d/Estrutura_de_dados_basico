@@ -69,6 +69,7 @@ mesclar_dicionarios({"a": 1, "b": 2}, {"b": 3, "c": 4})
 # lembre-se que dicionários são key: value
 def acessar_valor_dicionario(dicionario, chave_externa, chave_interna):
     print(dicionario[chave_externa].get(chave_interna))
+    print("=" * 30)
 
 
 acessar_valor_dicionario(
@@ -93,8 +94,8 @@ acessar_valor_dicionario(
 # Modifique um valor em um dicionário aninhado nas chaves especificadas
 def modificar_dicionario(dicionario, chave_externa, chave_interna, novo_valor):
     dicionario[chave_externa].update({chave_interna: novo_valor})
-
     print(dicionario)
+    print("=" * 30)
 
 
 modificar_dicionario(
@@ -125,16 +126,11 @@ modificar_dicionario(
 def soma_valores_dicionario(dicionario):
     total: int = 0
 
-    for alunos in dicionario.items():
-        # print(alunos)
-        for aluno in alunos:
-            print(aluno)
-            for nota in aluno.keys():
-                print(f"nota: {nota}")
-
-            # total += nota
+    for notas in dicionario.values():
+        total += sum(notas.values())
 
     print(total)
+    print("=" * 30)
 
 
 soma_valores_dicionario(
